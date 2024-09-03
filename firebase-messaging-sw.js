@@ -7,8 +7,8 @@ firebase.initializeApp({
   projectId: "newseepie",
   storageBucket: "newseepie.appspot.com",
   messagingSenderId: "626517872097",
-  appId: "YOUR_APP_ID",
-  measurementId: "YOUR_MEASUREMENT_ID"
+  appId: "1:626517872097:web:392aca77d1769e0aae96a0",
+  measurementId: "G-CXXBF7LYL9"
 });
 
 const messaging = firebase.messaging();
