@@ -27,6 +27,7 @@
         <div class="container">
             <h2>Explore the World in just one click.</h2>
             <p>Discover what's happening on the planet.</p>
+            <button onclick="requestPermission()">Enable Notifications</button>
             <a href="#cars" class="btn">View Top News</a>
         </div>
     </section>
@@ -146,25 +147,5 @@
   // Call this function when your page loads
   requestPermission();
         </script>
-    <script>
-  const messaging = firebase.messaging();
-        
-    function requestPermission() {
-  console.log("Requesting permission...");
-  Notification.requestPermission().then((permission) => {
-    console.log("Permission result:", permission);
-    if (permission === 'granted') {
-      console.log('Notification permission granted.');
-      getToken();  // Function to get the token
-    } else {
-      console.log('Notification permission denied.');
-    }
-  }).catch((error) => {
-    console.error('Error requesting permission:', error);
-  });
-}
-
-// Call this function to request permission
-requestPermission();
 </body>
 </html>
