@@ -28,3 +28,47 @@ document.addEventListener("DOMContentLoaded", function () {
         observer.observe(item);
     });
 });
+<script>
+  const messaging = firebase.messaging();
+
+  // Request permission to send notifications
+  function requestPermission() {
+    Notification.requestPermission().then((permission) => {
+      if (permission === 'granted') {
+        console.log('Notification permission granted.');
+        getToken();
+      } else {
+        console.log('Unable to get permission to notify.');
+      }
+    });
+  }
+
+  // Get the device token
+  function getToken() {
+    messaging.getToken({ vapidKey: 'YOUR_VAPID_KEY' }).then((currentToken) => {
+      if (currentToken) {
+        console.log('Token retrieved:', currentToken);
+        // Send the token to your server and save it to send notifications later
+      } else {
+        console.log('No registration token available. Request permission to generate one.');
+      }
+    }).catch((err) => {
+      console.log('An error occurred while retrieving token. ', err);
+    });
+  }
+
+  // Handle incoming messages
+  messaging.onMessage((payload) => {
+    console.log('Message received. ', payload);
+    // Display notification
+    const notificationTitle = payload.notification.title;
+    const notificationOptions = {
+      body: payload.notification.body,
+      icon: payload.notification.icon
+    };
+    new Notification(notificationTitle, notificationOptions);
+  });
+
+  // Call this function when your page loads
+  requestPermission();
+</script>
