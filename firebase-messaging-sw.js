@@ -5,8 +5,8 @@ firebase.initializeApp({
   apiKey: "AIzaSyDcGQ5cdIPDRFz-85rFjlJ3lfsyJhPJ9YE",
   authDomain: "newseepie.firebaseapp.com",
   projectId: "newseepie",
-  storageBucket: "newseepie.app",
-  messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
+  storageBucket: "newseepie.appspot.com",
+  messagingSenderId: "626517872097",
   appId: "YOUR_APP_ID",
   measurementId: "YOUR_MEASUREMENT_ID"
 });
