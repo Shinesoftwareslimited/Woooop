@@ -72,3 +72,4 @@ document.addEventListener("DOMContentLoaded", function () {
   // Call this function when your page loads
   requestPermission();
 </script>
+navigator.serviceWorker.register('firebase-messaging-sw.js')
