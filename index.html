@@ -91,6 +91,16 @@
   const app = initializeApp(firebaseConfig);
   const analytics = getAnalytics(app);
       </script>
-
+<script>
+  // Check if service workers are supported
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/firebase-messaging-sw.js')
+    .then(function(registration) {
+      console.log('Service Worker registered with scope:', registration.scope);
+    }).catch(function(err) {
+      console.log('Service Worker registration failed:', err);
+    });
+  }
+</script>
 </body>
 </html>
