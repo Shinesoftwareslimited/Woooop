@@ -2,9 +2,9 @@ importScripts('https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js');
 importScripts('https://www.gstatic.com/firebasejs/9.0.0/firebase-messaging.js');
 
 firebase.initializeApp({
-  apiKey: "YOUR_API_KEY",
-  authDomain: "newseepie.live",
-  projectId: "",
+  apiKey: "AIzaSyDcGQ5cdIPDRFz-85rFjlJ3lfsyJhPJ9YE",
+  authDomain: "newseepie.firebase.com",
+  projectId: "newseepie",
   storageBucket: "YOUR_STORAGE_BUCKET",
   messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
   appId: "YOUR_APP_ID",
