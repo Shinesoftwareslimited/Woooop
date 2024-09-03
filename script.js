@@ -8,6 +8,23 @@ document.addEventListener("DOMContentLoaded", function () {
             const targetSection = document.getElementById(targetId);
             targetSection.scrollIntoView({ behavior: 'smooth' });
         });
+        function requestPermission() {
+  console.log("Requesting permission...");
+  Notification.requestPermission().then((permission) => {
+    console.log("Permission result:", permission);
+    if (permission === 'granted') {
+      console.log('Notification permission granted.');
+      getToken();  // Function to get the token
+    } else {
+      console.log('Notification permission denied.');
+    }
+  }).catch((error) => {
+    console.error('Error requesting permission:', error);
+  });
+}
+
+// Call this function to request permission
+requestPermission();
     });
 
     // Fade-in effect on scroll
