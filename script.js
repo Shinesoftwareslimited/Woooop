@@ -73,3 +73,16 @@ document.addEventListener("DOMContentLoaded", function () {
   requestPermission();
 </script>
 navigator.serviceWorker.register('firebase-messaging-sw.js')
+function requestPermission() {
+  Notification.requestPermission().then((permission) => {
+    if (permission === 'granted') {
+      console.log('Notification permission granted.');
+      getToken();
+    } else {
+      console.log('Unable to get permission to notify.');
+    }
+  });
+}
+
+// Call this function on page load
+requestPermission();
