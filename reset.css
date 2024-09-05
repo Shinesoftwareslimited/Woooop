@@ -37,10 +37,10 @@ body {
     justify-content: flex-end;
 }
 
-.nav-list {
+/*.nav-list {
     list-style: none;
     align:right;
-}
+}*/
 
 .nav-item {
     margin-left: 20px;
