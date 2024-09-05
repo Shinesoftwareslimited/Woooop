@@ -32,14 +32,14 @@ body {
     font-weight: bold;
 }
 
-.navbar {
+/*.navbar {
     display: flex;
     justify-content: flex-end;
-}
+}*/
 
-.nav-list {
+/*.nav-list {
     list-style: none;
-}
+}*/
 
 .nav-item {
     margin-left: 20px;
