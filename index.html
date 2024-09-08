@@ -20,83 +20,6 @@
     <link rel="stylesheet" href="sdtyle.css">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3874538478011908"
      crossorigin="anonymous"></script>
-        <script type="module">
-  // Import the functions you need from the SDKs you need
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.13.1/firebase-app.js";
-  import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.13.1/firebase-analytics.js";
-  // TODO: Add SDKs for Firebase products that you want to use
-  // https://firebase.google.com/docs/web/setup#available-libraries
-
-  // Your web app's Firebase configuration
-  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-  const firebaseConfig = {
-    apiKey: "AIzaSyDcGQ5cdIPDRFz-85rFjlJ3lfsyJhPJ9YE",
-    authDomain: "newseepie.firebaseapp.com",
-    projectId: "newseepie",
-    storageBucket: "newseepie.appspot.com",
-    messagingSenderId: "626517872097",
-    appId: "1:626517872097:web:392aca77d1769e0aae96a0",
-    measurementId: "G-CXXBF7LYL9"
-  };
-
-  // Initialize Firebase
-  const app = initializeApp(firebaseConfig);
-  const analytics = getAnalytics(app);
-      </script>
-<script>
-  // Check if service workers are supported
-  if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('/firebase-messaging-sw.js')
-    .then(function(registration) {
-      console.log('Service Worker registered with scope:', registration.scope);
-    }).catch(function(err) {
-      console.log('Service Worker registration failed:', err);
-    });
-  }
-</script>
-    <script>
-  const messaging = firebase.messaging();
-
-  // Request permission to send notifications
-  function requestPermission() {
-    Notification.requestPermission().then((permission) => {
-      if (permission === 'granted') {
-        console.log('Notification permission granted.');
-        getToken();
-      } else {
-        console.log('Unable to get permission to notify.');
-      }
-    });
-  }
-
-  // Get the device token
-  function getToken() {
-    messaging.getToken({ vapidKey: 'YOUR_VAPID_KEY' }).then((currentToken) => {
-      if (currentToken) {
-        console.log('Token retrieved:', currentToken);
-        // Send the token to your server and save it to send notifications later
-      } else {
-        console.log('No registration token available. Request permission to generate one.');
-      }
-    }).catch((err) => {
-      console.log('An error occurred while retrieving token. ', err);
-    });
-  }
-
-  // Handle incoming messages
-  messaging.onMessage((payload) => {
-    console.log('Message received. ', payload);
-    // Display notification
-    const notificationTitle = payload.notification.title;
-    const notificationOptions = {
-      body: payload.notification.body,
-      icon: payload.notification.icon
-    };
-    new Notification(notificationTitle, notificationOptions);
-  });
-
-  // Call this function when your page loads
-  requestPermission();
     </script>
     <script async custom-element="amp-auto-ads"
         src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
@@ -140,6 +63,18 @@
                         <p>Do you know how much does the world's most expensive car costs. Come and see the beauty of world's most expensive cars and tell us which one is your favorite.</p>
                     </div>
                 </div></a>
+              <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3874538478011908"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="fluid"
+     data-ad-layout-key="-5k+d8+72-hl-2t"
+     data-ad-client="ca-pub-3874538478011908"
+     data-ad-slot="5410044359"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+              
               <a href='bestyeachers.html' id = 'lik'><div class="car-item">
                     <img src="bb.jpeg" alt="Teachers nominated for best teachers award">
                       <div class="car-details">
