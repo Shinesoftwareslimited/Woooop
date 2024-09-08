@@ -1,19 +1,19 @@
 {
   "name": "Newseepie",
   "short_name": "Newseepie",
-  "description": "Top 7 Teachers Receiving the Best Teacher Award in 2024",
-  "start_url": "/index.html",
+  "description": "Newseepie Main Page",
+  "start_url": "www.newseepie.live/",
   "display": "standalone",
   "background_color": "#FFFFFF",
   "theme_color": "#FFC107",
   "icons": [
     {
-      "src": "/icons/icon-192x192.png",
+      "src": "icon.jpeg",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "/icons/icon-512x512.png",
+      "src": "icon.jpeg",
       "sizes": "512x512",
       "type": "image/png"
     }
