@@ -1,6 +1,15 @@
 document.addEventListener("DOMContentLoaded", function () {
 
     // Smooth scroll for navigation links
+    if ("serviceWorker" in navigator) {
+  window.addEventListener("load", function() {
+    navigator.serviceWorker.register("/sw.js").then(function(registration) {
+      console.log("ServiceWorker registration successful with scope: ", registration.scope);
+    }, function(err) {
+      console.log("ServiceWorker registration failed: ", err);
+    });
+  });
+    }
 
     const navLinks = document.querySelectorAll('.nav-item a');
 
