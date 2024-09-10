@@ -1,8 +1,8 @@
 const CACHE_NAME = "newseepie-cache-v1";
 const urlsToCache = [
-  "newseepie.live",
-  "index.html",
-  "rset.css",
+  "/",
+  "/index.html",
+  "/rset.css",
   "/script.js",
   "OIG2.png",
   "OIG2.png"
