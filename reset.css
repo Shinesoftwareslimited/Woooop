@@ -235,7 +235,7 @@ fadeIn {
     transition: background 0.3s ease;
     animation: fadeIn 1s ease forwards;
     }*/
-.hero, .btn {
+.btn {
     background: #ffd700;
     color: #333;
     padding: 10px 20px;
