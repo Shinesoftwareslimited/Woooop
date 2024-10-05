@@ -236,8 +236,8 @@ fadeIn {
     animation: fadeIn 1s ease forwards;
     }*/
 .btn {
-    background: #333
-    color: #ffd700
+    background: #333;
+    color: #ffd700;
     padding: 10px 20px;
     text-decoration: none;
     font-size: 1rem;
