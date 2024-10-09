@@ -3,28 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Download Your Files | Newseepie</title>
-    <link rel="stylesheet" href="kol.css">
+    <title>Download Files | Newseepie</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>Download Your Files</h1>
-            <p>Explore and download your files with just one click, brought to you by Newseepie.</p>
+            <h1>Download Your File</h1>
+            <p>Click the button below to download the file directly to your device.</p>
         </header>
 
         <div class="download-section">
             <div class="file">
-                <h2>Download Report</h2>
-                <a href="/downloads/your-file.pdf" class="download-btn">Download</a>
+                <h2>Get Your Report</h2>
+                <!-- Triggering download via JS -->
+                <button class="download-btn" onclick="downloadFile('your-file.pdf')">Download Report</button>
             </div>
 
             <div class="file">
-                <h2>Download Image</h2>
-                <a href="download.jpeg" class="download-btn">Download</a>
+                <h2>Get Your Image</h2>
+                <button class="download-btn" onclick="downloadFile('sample-image.jpg')">Download Image</button>
             </div>
         </div>
     </div>
-    <script src="kol.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
