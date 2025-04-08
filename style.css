@@ -50,9 +50,15 @@ applet.nav-drawer a:hover {
 }
 
 
+header img{
+  align-self: left;
+  padding: 0.4rem 0.4rem;
+  position: sticky;
+}
+
 header {
   background: linear-gradient(to right, #3d4453, #5e6678);
-  padding: 1rem 2rem;
+  /*padding: 1rem 2rem;*/
   display: flex;
   justify-content: space-between;
   align-items: center;
