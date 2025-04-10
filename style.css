@@ -8,6 +8,11 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   scroll-behavior: smooth;
 }
+a
+{
+  color: antiquewhite;
+  alink: Gray;
+}
 #menuToggle {
   align-content: right;
   font-size: 1.5rem;
