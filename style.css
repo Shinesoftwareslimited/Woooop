@@ -13,6 +13,17 @@ a
   color: antiquewhite;
   alink: Gray;
 }
+iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  min-height: 300px;
+}
+.map-container {
+  width: 100%;
+  height: 100%;
+}
+
 #menuToggle {
   align-content: right;
   font-size: 1.5rem;
