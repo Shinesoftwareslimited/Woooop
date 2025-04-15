@@ -1,19 +1,19 @@
 {
   "name": "Vigor Industries Limited",
   "short_name": "Vigor Industries",
-  "description": "Newseepie Main Page",
+  "description": "Main Page of Vigor Industries Limited",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#FFFFFF",
   "theme_color": "#FFC107",
   "icons": [
     {
-      "src": "OIG2.jpeg",
+      "src": "favilog.PNG",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "OIG2.jpeg",
+      "src": "favilog.PNG",
       "sizes": "512x512",
       "type": "image/png"
     }
