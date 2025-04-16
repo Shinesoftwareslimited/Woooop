@@ -4,8 +4,8 @@
   "description": "Main Page of Vigor Industries Limited",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#FFFFFF",
-  "theme_color": "#FFC107",
+  "background_color": "#1c1f26",
+  "theme_color": "#1c1f26",
   "icons": [
     {
       "src": "favilog.PNG",
