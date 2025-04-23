@@ -1,7 +1,8 @@
 // Vigor Industries JavaScript: Modern UX + Secure Auth + Transitions
 
 // Animate on Scroll
-const menuToggle = document.getElementById('menuToggle');
+document.addEventListener('DOMContentLoaded', () => {
+    const menuToggle = document.getElementById('menuToggle');
     const navDrawer = document.getElementById('navDrawer');
 
     // Initial state: hide the nav drawer
