@@ -1,6 +1,29 @@
 // Vigor Industries JavaScript: Modern UX + Secure Auth + Transitions
 
 // Animate on Scroll
+const menuToggle = document.getElementById('menuToggle');
+    const navDrawer = document.getElementById('navDrawer');
+
+    // Initial state: hide the nav drawer
+    navDrawer.style.display = 'none';
+
+    menuToggle.addEventListener('click', () => {
+      if (navDrawer.style.display === 'none') {
+        navDrawer.style.display = 'flex';
+        navDrawer.style.flexDirection = 'column';
+        navDrawer.style.position = 'absolute';
+        navDrawer.style.top = '100%';
+        navDrawer.style.right = '0';
+        navDrawer.style.background = '#2e323d';
+        navDrawer.style.padding = '1rem';
+        navDrawer.style.boxShadow = '0 2px 10px rgba(0,0,0,0.5)';
+        navDrawer.style.borderRadius = '0 0 8px 8px';
+        navDrawer.style.zIndex = '1000';
+      } else {
+        navDrawer.style.display = 'none';
+      }
+    });
+  });
 const scrollElements = document.querySelectorAll(".animate-on-scroll");
 
 const elementInView = (el, offset = 100) => {
