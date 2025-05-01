@@ -256,7 +256,7 @@ footer {
 .animate-on-scroll.visible {
   opacity: 1;
   transform: translateY(0);
-}
+
 .about-section {
   padding: 3rem 2rem;
   margin: 1rem auto;
