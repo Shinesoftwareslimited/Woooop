@@ -242,20 +242,7 @@ footer {
   transition: opacity 1s ease-out;
 }
 
-@keyframes pulse {
-  0% { transform: scale(1); background-color: #3d4453; }
-  100% { transform: scale(1.05); background-color: #2e323d; }
-}
 
-.animate-on-scroll {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 1s ease, transform 1s ease;
-}
-
-.animate-on-scroll.visible {
-  opacity: 1;
-  transform: translateY(0);
 
 .about-section {
   padding: 3rem 2rem;
