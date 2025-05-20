@@ -1,6 +1,12 @@
 {
   "rewrites": [
     { "source": "/vigorinfotechlimited", "destination": "vigorinfotech.html" },
-    { "source": "/updatesvigorinfotech", "destination": "updatesvigorinfo.html" }
+    { "source": "/updatesvigorinfotech", "destination": "updatesvigorinfo.html" },
+    { "source": "/webbrosh", "destination": "webbrosh.html" },
+    { "source": "/updatesvigorinfo", "destination": "updatesvigorinfo.html" },
+    { "source": "/appdesign", "destination": "appdesi.html" },
+
+
+    
   ]
 }
