@@ -40,21 +40,36 @@ a
       transform: translateY(-4px);
     }
 
-    .info-card {
-      position: absolute;
-      bottom: 60px;
-      right: 0;
-      background: #ffffff;
-      color: #2c3e50;
-      border-radius: 14px;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
-      padding: 18px 20px;
-      width: 280px;
-      opacity: 0;
-      pointer-events: none;
-      transition: opacity 0.4s ease, transform 0.4s ease;
-    }
+.info-card::-webkit-scrollbar {
+  width: 6px;
+}
 
+.info-card::-webkit-scrollbar-thumb {
+  background-color: #1abc9c;
+  border-radius: 10px;
+}
+
+.info-card::-webkit-scrollbar-track {
+  background: #f0f0f0;
+}
+.info-card {
+  position: absolute;
+  bottom: 60px;
+  right: 0;
+  background: #ffffff;
+  color: #2c3e50;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  padding: 18px 20px;
+  width: 320px;
+  max-height: 400px; /* LIMITS HEIGHT */
+  overflow-y: auto;  /* ENABLES SCROLLING */
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  scrollbar-width: thin;
+  scrollbar-color: #1abc9c #f0f0f0;
+}
     .floating-btn-container:hover .info-card {
       opacity: 1;
       pointer-events: auto;
