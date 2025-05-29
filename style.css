@@ -316,7 +316,34 @@ footer {
   transition: opacity 1s ease-out;
 }
 
+.social-icons {
+      margin-top: 20px;
+    }
 
+    .social-icons a {
+      display: inline-block;
+      margin: 10px;
+      background-color: white;
+      border-radius: 50%;
+      padding: 10px;
+      width: 40px;
+      height: 40px;
+      line-height: 20px;
+      text-align: center;
+      align-items: center;
+      transition: background-color 0.3s ease;
+    }
+
+    .social-icons a:hover {
+      background-color: #caa646;
+    }
+
+    .social-icons img {
+      width: 20px;
+      height: 20px;
+      vertical-align: middle;
+     /* padding: 2rem;*/
+    }
 
 .about-section {
   padding: 3rem 2rem;
