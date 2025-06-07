@@ -190,7 +190,7 @@ nav a:hover {
 .hero {
   padding: 6rem 2rem;
   text-align: center;
-  background: ('https://www.newseepie.live/roop.jpeg');
+  background: url('https://www.newseepie.live/roop.jpeg');
   color: #f3f6fb;
   transition: transform 0.4s ease;
 }
