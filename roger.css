@@ -190,19 +190,31 @@ nav a:hover {
 .hero {
   padding: 6rem 2rem;
   text-align: center;
-  background: url('https://www.newseepie.live/roop.jpeg');
+  background: linear-gradient(rgba(44, 62, 80, 0.6), rgba(44, 62, 80, 0.6)),
+              url('https://www.newseepie.live/roop.jpeg') no-repeat center center/cover;
   color: #f3f6fb;
   transition: transform 0.4s ease;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
+@media (max-width: 768px) {
+  .hero {
+    padding: 4rem 1rem;
+    min-height: 90vh;
+  }
 
-.hero h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-}
+  .hero h1 {
+    font-size: 1.7rem;
+  }
 
-.hero p {
-  font-size: 1.3rem;
-  color: #a0b2c5;
+  .hero p {
+    font-size: 1rem;
+  }
 }
 
 .subsidiary-grid {
