@@ -190,7 +190,7 @@ nav a:hover {
 .hero {
   padding: 6rem 2rem;
   text-align: center;
-  background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLVWv7opiBnGnvEz7_S2WPVhVap3vbrhg9bg&s');
+  background: 'roop.jpeg';
   color: #f3f6fb;
   transition: transform 0.4s ease;
 }
