@@ -6,6 +6,9 @@
     { "source": "/updatesvigorinfo", "destination": "updatesvigorinfo.html" },
     { "source": "/appdesign", "destination": "appdesi.html" },
     { "source": "/aibrosh", "destination": "aibrosh.html"},
-    { "source": "/ppolicy", "destination": "ppolicy.html"}
+    { "source": "/ppolicy", "destination": "ppolicy.html"},
+    { "source": "/directornote", "destination": "directornote.html"}
+    
+    
   ]
 }
