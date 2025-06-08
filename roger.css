@@ -146,7 +146,74 @@ header img{
   padding: 0.4rem 0.4rem;
   position: sticky;
 }
+section#sector-services {
+    background: linear-gradient(to right, #1c1f26, #2e323d);
+ /* Matches site */
+    padding: 60px 20px;
+    text-align: center;
+  }
 
+  #sector-services h2 {
+    font-size: 2.4em;
+    margin-bottom: 10px;
+    color: ivory;
+  }
+
+  #sector-services > p {
+    font-size: 1.1em;
+    color: gray;
+    max-width: 800px;
+    margin: 0 auto 40px;
+  }
+
+  .sector-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .sector-card {
+    background: #ffffff;
+    border: 2px solid #e0e0e0;
+    border-left: 6px solid #003366; /* Branding accent */
+    border-radius: 14px;
+    padding: 25px;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  }
+
+  .sector-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 24px rgba(0,0,0,0.1);
+  }
+
+  .sector-card h3 {
+    font-size: 1.25em;
+    color: #222;
+    margin-bottom: 10px;
+  }
+
+  .sector-card p {
+    font-size: 0.95em;
+    color: #555;
+  }
+
+  .sector-card img {
+    width: 40px;
+    margin-bottom: 15px;
+  }
+body.theme-light {
+  background: #ffffff;
+  color: #111;
+}
+
+body.theme-dark {
+  background: #121212;
+  color: #f0f0f0;
+  }
 header {
   background: linear-gradient(to right, #3d4453, #5e6678);
   /*padding: 1rem 2rem;*/
