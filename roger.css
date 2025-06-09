@@ -174,9 +174,20 @@ section#sector-services {
     margin: 0 auto;
   }
 
+.sector-card1 {
+    background:;
+  text: white;
+    border: 2px #e0e0e0;
+    border-left: 6px solid #003366; /* Branding accent */
+    border-radius: 14px;
+    padding: 25px;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
   .sector-card {
     background: #ffffff;
-    border: 2px solid #e0e0e0;
+    border: 2px #e0e0e0;
     border-left: 6px solid #003366; /* Branding accent */
     border-radius: 14px;
     padding: 25px;
