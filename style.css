@@ -356,5 +356,31 @@ footer {
   box-shadow: 0 5px 15px var(--shadow);
   animation: fadeIn 1s ease-in;
 }
+.implink {
+  display: inline-block;
+  background: linear-gradient(145deg, #4b5c6b, #2e323d);
+  color: #ffffff;
+  padding: 12px 24px;
+  margin: 10px 5px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
 
-    
+/* Hover effect for important links */
+.implink:hover {
+  background: linear-gradient(145deg, #5c6d7e, #3e444f);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.35);
+  text-decoration: none;
+}
+@media (max-width: 768px) {
+  .implink {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+  }
+} 
