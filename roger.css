@@ -213,6 +213,7 @@ section#sector-services {
   }
 
   .sector-card img {
+    align-items: center;
     width: 270px;
     margin-bottom: 3px;
   }
