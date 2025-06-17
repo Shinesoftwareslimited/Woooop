@@ -2,8 +2,9 @@
 
 // Animate on Scroll
 document.addEventListener('DOMContentLoaded', () => {
-    const menuToggle = document.getElementById('nav-open');
-    const navDrawer = document.getElementById('side-nav');
+    document.getElementById('nav-open').onclick = () => document.getElementById('side-nav').classList.add('open');
+    document.getElementById('nav-close').onclick = () => document.getElementById('side-nav').classList.remove('open');
+
 
     // Initial state: hide the nav drawer
     navDrawer.style.display = 'none';
