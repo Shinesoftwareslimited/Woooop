@@ -55,7 +55,7 @@
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
-<section class="hero-section">
+<section class="hero-section" id = 'hero-overlay'>
   <div class="hero-overlay"></div>
   <div class="hero-content">
     <h1 class="hero-title">Empowering the Future</h1>
@@ -311,13 +311,13 @@ Full transparency on pricing, IP ownership, timelines, and scope. You stay in co
   <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
 <script>
 lottie.loadAnimation({
-      container: document.getElementById('hero-section'),
+      container: document.getElementById('hero-overlay'),
       renderer: 'svg',
       loop: true,
       autoplay: true,
       path: 'https://assets5.lottiefiles.com/packages/lf20_jcikwtux.json'
     });
-     particlesJS('particles-js', {
+   particlesJS('particles-js', {
       particles: {
         number: { value: 60 },
         size: { value: 3 },
