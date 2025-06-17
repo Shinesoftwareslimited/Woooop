@@ -1,0 +1,63 @@
+.carousel-container {
+  padding: 20px;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+h2 {
+  margin-left: 10px;
+  font-size: 24px;
+}
+
+.carousel-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px;
+}
+
+.carousel {
+  display: flex;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  flex: 0 0 80%;
+  max-width: 80%;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  height: 300px;
+  color: white;
+  position: relative;
+  scroll-snap-align: start;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  background: rgba(0, 0, 0, 0.55);
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.overlay h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.overlay p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.read-more {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
