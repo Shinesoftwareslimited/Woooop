@@ -352,6 +352,69 @@ lottie.loadAnimation({
     });
 </script>
   <script src="nscript.js"></script>
-  <script src="caru.js"></script>
+  <script src="car.js"></script>
+<script>
+  const carousel = document.getElementById('carousel');
+  const prevBtn = document.getElementById('prev');
+  const nextBtn = document.getElementById('next');
+  const pageIndicator = document.getElementById('page-indicator');
+
+  const cards = document.querySelectorAll('.card');
+  const cardWidth = cards[0].offsetWidth + 20;
+  let currentIndex = 0;
+  let autoSlideInterval;
+
+  function updateIndicator() {
+    const total = cards.length;
+    const current = Math.min(total, Math.floor(carousel.scrollLeft / cardWidth) + 1);
+    pageIndicator.textContent = `${String(current).padStart(2, '0')} / ${String(total).padStart(2, '0')}`;
+  }
+
+  function scrollToCard(index) {
+    const scrollX = index * cardWidth;
+    carousel.scrollTo({ left: scrollX, behavior: 'smooth' });
+    currentIndex = index;
+    updateIndicator();
+  }
+
+  function slideNext() {
+    currentIndex = (currentIndex + 1) % cards.length;
+    scrollToCard(currentIndex);
+  }
+
+  function startAutoSlide() {
+    stopAutoSlide(); // Clear any existing interval
+    autoSlideInterval = setInterval(slideNext, 5000); // Slide every 5 seconds
+  }
+
+  function stopAutoSlide() {
+    clearInterval(autoSlideInterval);
+  }
+
+  // Event listeners
+  prevBtn.addEventListener('click', () => {
+    if (currentIndex > 0) {
+      scrollToCard(currentIndex - 1);
+    } else {
+      scrollToCard(cards.length - 1); // Wrap around
+    }
+    startAutoSlide(); // Reset timer
+  });
+
+  nextBtn.addEventListener('click', () => {
+    slideNext();
+    startAutoSlide();
+  });
+
+  carousel.addEventListener('scroll', updateIndicator);
+  carousel.addEventListener('mouseenter', stopAutoSlide);
+  carousel.addEventListener('mouseleave', startAutoSlide);
+
+  window.addEventListener('load', () => {
+    updateIndicator();
+    startAutoSlide(); // Kick things off
+  });
+</script>
+  
 </body>
               </html>
