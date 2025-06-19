@@ -350,7 +350,21 @@ nav a:hover {
   background: #5c657a;
   transform: translateY(-5px);
 }
+.subsidiar-card {
+  background: cyan;
+  padding: 1.5rem;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.4s ease;
+}
 
+.subsidiar-card:hover {
+  background: blue;
+  transform: translateY(-5px);
+}
 
 .nav-drawer {
   display: none;
