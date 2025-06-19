@@ -3,7 +3,7 @@
   padding: 20px;
   max-width: 100%;
   overflow: hidden;
-  background: #0c0c1e;
+  background: linear-gradient(to right, #1c1f26, #2e323d);
   color: white;
 }
 
