@@ -308,6 +308,7 @@ nav a:hover {
     }
     .hero .highlight {
       color: #00aaff;
+      font-weight: bold;
     }
     .hero p { margin-top: 10px; font-size: 1.2rem; opacity: 0.85; }
     .btn {
@@ -322,6 +323,7 @@ nav a:hover {
     }
 .highlight {
       color: #00aaff;
+      font-weight: bold;
     }
 
     /* Particles */
