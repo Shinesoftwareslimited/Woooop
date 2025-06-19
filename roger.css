@@ -320,6 +320,9 @@ nav a:hover {
       font-weight: bold;
       cursor: pointer;
     }
+.highlight {
+      color: #00aaff;
+    }
 
     /* Particles */
     #particles-js {
