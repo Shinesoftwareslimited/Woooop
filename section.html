@@ -1,0 +1,61 @@
+<html>
+  <head><script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <section class="relative bg-gradient-to-br from-[#0f0c29] via-[#302b63] to-[#24243e] text-white py-24 px-6">
+  <div class="max-w-7xl mx-auto text-center relative z-10">
+    <h2 class="text-5xl font-extrabold mb-8 bg-gradient-to-r from-amber-300 to-yellow-600 bg-clip-text text-transparent animate-pulse">
+      Our Products
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+      
+      <!-- Vigor Vision AI -->
+      <div class="backdrop-blur-xl bg-white/10 border border-white/20 rounded-2xl p-6 shadow-2xl transition transform hover:-translate-y-2 hover:scale-105 duration-500">
+        <h3 class="text-2xl font-bold text-amber-300 mb-2">Vigor Vision AI</h3>
+        <p class="text-gray-200">An object detection system used across industries for quality control, surveillance, and automation.</p>
+      </div>
+      
+      <!-- VigorDoc AI -->
+      <div class="backdrop-blur-xl bg-white/10 border border-white/20 rounded-2xl p-6 shadow-2xl transition transform hover:-translate-y-2 hover:scale-105 duration-500">
+        <h3 class="text-2xl font-bold text-rose-300 mb-2">VigorDoc AI</h3>
+        <p class="text-gray-200">A medical diagnostic AI assistant used in remote clinics, hospitals, and mobile units.</p>
+      </div>
+      
+      <!-- VigorChatOps -->
+      <div class="backdrop-blur-xl bg-white/10 border border-white/20 rounded-2xl p-6 shadow-2xl transition transform hover:-translate-y-2 hover:scale-105 duration-500">
+        <h3 class="text-2xl font-bold text-sky-300 mb-2">VigorChatOps</h3>
+        <p class="text-gray-200">An internal chatbot platform to streamline support, HR, IT queries, and knowledge base automation.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Overlay sparkles effect -->
+  <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-white/5 via-white/0 to-white/0 opacity-50 pointer-events-none z-0"></div>
+</section>
+
+<!-- Call to Action Section -->
+<section class="bg-gradient-to-tr from-purple-900 via-indigo-800 to-blue-900 text-white py-20 px-6 text-center">
+  <div class="max-w-3xl mx-auto">
+    <h2 class="text-5xl font-bold mb-6 tracking-wide text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-yellow-400 animate-gradient">Ready to Partner with Innovation?</h2>
+    <p class="text-lg text-gray-300 mb-10">Let’s ideate, architect, and deploy AI that scales. Whether you're a startup, enterprise, or government – Vigor Infotech is your innovation partner.</p>
+    <a href="/contact" class="inline-block bg-yellow-500 hover:bg-yellow-600 text-gray-900 px-10 py-4 rounded-full font-semibold text-lg shadow-lg transition duration-300">🚀 Schedule a Discovery Call</a>
+  </div>
+</section>
+    <style>
+      // tailwind.config.js
+theme: {
+  extend: {
+    animation: {
+      'gradient': 'gradient 4s ease infinite',
+    },
+    keyframes: {
+      gradient: {
+        '0%, 100%': { backgroundPosition: '0% 50%' },
+        '50%': { backgroundPosition: '100% 50%' },
+      },
+    }
+  }
+      }
+    </style>
+  </body>
+</html>
