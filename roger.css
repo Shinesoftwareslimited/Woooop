@@ -112,6 +112,13 @@ iframe {
   border: none;
   min-height: 300px;
 }
+
+.big {
+  width: 10rem;
+  height: 10rem;
+  border: none;
+  min-height: 300px;
+}
 .map-container {
   width: 100%;
   height: 100%;
