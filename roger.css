@@ -114,8 +114,8 @@ iframe {
 }
 
 .big {
-  width: 400%;
-  height: 900%;
+  width: 100%;
+  height: 900px;
   
   border: none;
   min-height: ;
