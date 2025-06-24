@@ -1,0 +1,274 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vigor Infotech | Book a Consultation</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/lottie-web@5.7.4/build/player/lottie.min.js"></script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+    body {background: #0b0b0f;
+      overflow-x: hidden;
+      color: black;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      backdrop-filter: blur(10px);
+      border-radius: 16px;
+      border: 1px solid rgba(255,255,255,0.9);
+  
+      background:;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .logo {
+      font-size: 1.6rem;
+      font-weight: 800;
+      color: #00c6ff;
+    }
+  .nav-btn {
+      font-size: 2rem; background: none; border: none; color: white; cursor: pointer;
+    }
+
+    /* Side Nav */
+    .side-nav {
+      backdrop-filter: blur(10px);
+      position: fixed; top: 0; right: -100%; height: 100vh; width: 300px;
+      transition: right 0.4s ease-in-out;
+      padding: 40px;
+      flex-direction: column;
+      z-index: 1001;
+    }
+    .side-nav.open { right: 0; }
+    .side-nav .close-btn {
+      font-size: 2rem; border: none; background: none; color: white; align-self: flex-end;
+    }
+    .side-nav ul { list-style: none; margin-top: 50px; }
+    .side-nav ul li { margin: 20px 0; }
+    .side-nav ul li a { color: white; text-decoration: none; font-size: 1.2rem; }
+
+    .hero {
+  text-align: center;
+  padding: 3rem 2rem;
+  position: relative;
+}
+#animation {
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+}
+.hero h1 {
+  font-size: 2.8rem;
+  margin-top: 1rem;
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.hero p {
+  font-size: 1.2rem;
+  color: #ffffffcc;
+  margin-top: 0.5rem;
+}
+
+.form-section {
+  backdrop-filter: blur(15px);
+  background: rgba(255, 255, 255, 0.05);
+  padding: 3rem 2rem;
+  max-width: 600px;
+  margin: 2rem auto;
+  border-radius: 2rem;
+  box-shadow: 0 0 40px rgba(255,255,255,0.15);
+}
+.form-section h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 1.5rem;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+input, textarea, select {
+  padding: 1rem;
+  border: none;
+  border-radius: 1rem;
+  background: rgba(255,255,255,0.1);
+  color: #fff;
+  font-size: 1rem;
+}
+input:focus, textarea:focus, select:focus {
+  background: rgba(255,255,255,0.2);
+  outline: none;
+}
+button {
+  padding: 1rem;
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+  border: none;
+  border-radius: 1rem;
+  font-weight: bold;
+  font-size: 1rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+.glass-footer {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(20px);
+  padding: 3rem 2rem;
+  color: #fff;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.footer-box h3 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  color: #00c6ff;
+}
+
+.footer-box p, .footer-box a {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  color: #ffffffcc;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  font-size: 1.4rem;
+  color: #ffffffcc;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color: #00c6ff;
+  transform: scale(1.2);
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  color: #ffffffaa;
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+  </style>
+</head>
+<body>
+<header class="glass">
+    <div class="logo">Vigor Infotech</div>
+    <button class="nav-btn" id="nav-open">☰</button>
+  </header>
+
+  <!-- Side Nav -->
+  <nav class="side-nav glass" id="side-nav">
+    <button class="close-btn" id="nav-close">×</button>
+    <ul>
+      <li><a href="/vigorinfotechlimited">Home</a></li>
+      <li><a href="/vigorinfotechlimited#about">About</a></li>
+      <li><a href="/vigorinfotechlimited#services">Services</a></li>
+      <li><a href="/vigorinfotechlimited#case">Case Study</a></li>
+      <li><a href='#form-section'>Get a Consultation Booked</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+<section class="hero">
+    <div id="animation"></div>
+    <h1>Where Vision Meets Intelligence</h1>
+    <p>Disrupting industries with AI, automation, and digital excellence</p>
+  </section>  <section class="form-section" id="consult">
+    <h2>Book a Consultation</h2>
+    <form action="https://formspree.io/f/your-form-id" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <input type="tel" name="phone" placeholder="Phone Number" required>
+      <select name="service" required>
+        <option disabled selected>Select a service</option>
+        <option>Web Development</option>
+        <option>AI Integration</option>
+        <option>Automation & IoT</option>
+        <option>IT Consultation</option>
+        <option>App Development</option>
+        <option>Cyber Security</option>
+        <option>Digital Marketing</option>
+      </select>
+      <textarea name="message" rows="4" placeholder="Tell us about your project..."></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </section><footer class="glass-footer">
+  <div class="footer-content">
+    <div class="footer-box">
+      <h3>Vigor Infotech</h3>
+      <p>Sector 21, Atal Nagar<br>Nava Raipur, Chhattisgarh</p>
+    </div>
+    <div class="footer-box">
+      <h3>Contact</h3>
+      <p><i class="fas fa-phone-alt"></i><a href='tel:9285291107'>Call Us</a></p>
+      <p><i class="fas fa-envelope"></i><a href='mailto:vigorinfotechlimited@gmail.com'>Mail Us</a></p>
+    </div>
+    <div class="footer-box">
+      <h3>Follow Us</h3>
+      <div class="social-icons">
+        <a href=""><i class="fab fa-instagram"></i></a>
+        <a href="https://linkedin.com/company/vigor-industries-limited"><i class="fab fa-linkedin"></i></a>
+        <a href="https://youtube.com/@vigorinfotechlimited"><i class="fab fa-youtube"></i></a>
+        <a href="https://x.com/Vigorindustries"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 Vigor Infotech Limited. All rights reserved.</p>
+  </div>
+</footer><script>
+    lottie.loadAnimation({
+      container: document.getElementById('animation'),
+      renderer: 'svg',
+      loop: true,
+      autoplay: true,
+      path: 'https://assets3.lottiefiles.com/packages/lf20_hxartbso.json'
+    });
+  lottie.loadAnimation({
+  container: document.getElementById('animation'),
+  renderer: 'svg',
+  loop: true,
+  autoplay: true,
+  path: 'https://assets2.lottiefiles.com/packages/lf20_tno6cg2w.json'
+});
+lottie.loadAnimation({
+  container: document.getElementById('card2-lottie'),
+  renderer: 'svg',
+  loop: true,
+  autoplay: true,
+  path: 'https://assets1.lottiefiles.com/packages/lf20_5ngs2ksb.json'
+});
+  
+  // NAV toggle
+    document.getElementById('nav-open').onclick = () => document.getElementById('side-nav').classList.add('open');
+    document.getElementById('nav-close').onclick = () => document.getElementById('side-nav').classList.remove('open');
+
+  </script></body>
+</html>
