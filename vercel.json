@@ -7,7 +7,8 @@
     { "source": "/appdesign", "destination": "appdesi.html" },
     { "source": "/aibrosh", "destination": "aibrosh.html"},
     { "source": "/ppolicy", "destination": "ppolicy.html"},
-    { "source": "/directornote", "destination": "directornote.html"}
+    { "source": "/directornote", "destination": "directornote.html"},
+    { "source": "/consult", "destination": "consult.html"}
     
     
   ]
