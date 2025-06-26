@@ -10,7 +10,7 @@
   scroll-behavior: smooth;
 }
  .glow-text {
-      font-size: 4rem;
+      font-size: 0.5rem;
       color: #fff;
       text-shadow:
         0 0 5px #0ff,
