@@ -44,7 +44,7 @@
 .glass {
       background: rgba(255,255,255,0.06);
       box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-      backdrop-filter: blur(15px);
+      backdrop-filter: blur(10px);
       border-radius: 16px;
       border: 1px solid rgba(255,255,255,0.18);
     }
@@ -372,7 +372,7 @@ nav a:hover {
       width: 100%; height: 100%; z-index: -1;
     }
 
-p { margin-top: 10px; font-size: 1.2rem; opacity: 0.85; align: center; text-align: center;}
+p { margin-top: 10px; font-size: 1.2rem; opacity: 0.85; align: center; text-align: center; padding: 4px}
   
 .subsidiary-grid {
   display: grid;
