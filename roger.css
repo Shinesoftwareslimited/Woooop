@@ -503,6 +503,7 @@ footer {
 .social-icons {
       margin-top: 20px;
     }
+.about-section p { margin-top: 10px; font-size: 1.2rem; opacity: 0.85; align: left; text-align: left;}
 
     .social-icons a {
       display: inline-block;
