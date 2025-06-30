@@ -297,7 +297,113 @@
     <div><strong>Framework:</strong> PyTorch</div>
   </div>
 </div>
-    
+    <div class="carder animate-on-scroll">
+  <h2 class="text-2xl font-bold text-pink-400 mb-4">System Requirements</h2>
+  <div class="grid gap-4">
+    <details class="bg-gray-800 rounded-2xl shadow-lg p-4">
+      <summary class="cursor-pointer text-lg font-semibold text-blue-300">CPU</summary>
+      <ul class="text-white list-disc list-inside mt-2">
+        <li><strong>Minimum:</strong> Intel Core i3-2100 / Jetson Nano</li>
+        <li><strong>Recommended:</strong> Intel Core i5 8th Gen or higher / AMD Ryzen 5 or better</li>
+      </ul>
+    </details><details class="bg-gray-800 rounded-2xl shadow-lg p-4">
+  <summary class="cursor-pointer text-lg font-semibold text-blue-300">GPU</summary>
+  <ul class="text-white list-disc list-inside mt-2">
+    <li><strong>Minimum:</strong> Not required (runs on CPU)</li>
+    <li><strong>Recommended:</strong> NVIDIA GTX 1660 / RTX 2060 or better for faster training</li>
+  </ul>
+</details>
+
+<details class="bg-gray-800 rounded-2xl shadow-lg p-4">
+  <summary class="cursor-pointer text-lg font-semibold text-blue-300">RAM</summary>
+  <ul class="text-white list-disc list-inside mt-2">
+    <li><strong>Minimum:</strong> 8 GB</li>
+    <li><strong>Recommended:</strong> 16 GB or more</li>
+  </ul>
+</details>
+
+<details class="bg-gray-800 rounded-2xl shadow-lg p-4">
+  <summary class="cursor-pointer text-lg font-semibold text-blue-300">Storage</summary>
+  <ul class="text-white list-disc list-inside mt-2">
+    <li><strong>Minimum:</strong> 5 GB free space (HDD supported)</li>
+    <li><strong>Recommended:</strong> 256 GB SSD or higher</li>
+  </ul>
+</details>
+
+<details class="bg-gray-800 rounded-2xl shadow-lg p-4">
+  <summary class="cursor-pointer text-lg font-semibold text-blue-300">Operating System</summary>
+  <ul class="text-white list-disc list-inside mt-2">
+    <li><strong>Minimum:</strong> Windows 10 / Ubuntu 20.04</li>
+    <li><strong>Recommended:</strong> Windows 11 / Ubuntu 22.04 LTS</li>
+  </ul>
+</details>
+
+<details class="bg-gray-800 rounded-2xl shadow-lg p-4">
+  <summary class="cursor-pointer text-lg font-semibold text-blue-300">Python Version</summary>
+  <ul class="text-white list-disc list-inside mt-2">
+    <li><strong>Recommended:</strong> Python 3.10</li>
+    <li><strong>Supported:</strong> 3.8 to 3.11</li>
+  </ul>
+</details>
+
+<details class="bg-gray-800 rounded-2xl shadow-lg p-4">
+  <summary class="cursor-pointer text-lg font-semibold text-blue-300">Frameworks & Libraries</summary>
+  <ul class="text-white list-disc list-inside mt-2">
+    <li>PyTorch 2.1+, OpenCV, torchvision</li>
+    <li>NumPy, SciPy, Matplotlib, Pandas</li>
+  </ul>
+</details>
+
+<details class="bg-gray-800 rounded-2xl shadow-lg p-4">
+  <summary class="cursor-pointer text-lg font-semibold text-blue-300">Optional Hardware (Robotics/Drones)</summary>
+  <ul class="text-white list-disc list-inside mt-2">
+    <li>Pixhawk, LiDAR, GPS, Ultrasonic Sensors</li>
+    <li>Gimbal-stabilized camera, telemetry module</li>
+  </ul>
+</details>
+
+<details class="bg-gray-800 rounded-2xl shadow-lg p-4">
+  <summary class="cursor-pointer text-lg font-semibold text-blue-300">Edge Deployment</summary>
+  <ul class="text-white list-disc list-inside mt-2">
+    <li><strong>Minimum:</strong> Jetson Nano</li>
+    <li><strong>Recommended:</strong> Jetson Xavier NX</li>
+    <li>Raspberry Pi 4 (light inference only)</li>
+  </ul>
+</details>
+
+<details class="bg-gray-800 rounded-2xl shadow-lg p-4">
+  <summary class="cursor-pointer text-lg font-semibold text-blue-300">Cloud & Server Compatibility</summary>
+  <ul class="text-white list-disc list-inside mt-2">
+    <li>AWS EC2 (g4dn, x2gd), GCP AI Platform</li>
+    <li>Vigor IntelliOps Hub</li>
+  </ul>
+</details>
+
+  </div>
+</div><style>
+  .animate-on-scroll {
+    animation: fadeInUp 1s ease-out forwards;
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+</style><script>
+  // Simple scroll animation loader
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('animate-on-scroll');
+      }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.carder').forEach(el => observer.observe(el));
+  </script>
   <script>
     AOS.init();
     function openForm(productName) {
