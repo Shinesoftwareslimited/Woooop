@@ -22,7 +22,7 @@
         0 0 80px #0ff;
       animation: pulse 2s infinite ease-in-out;
     }
-h1 {
+.h1 {
       font-size: 3rem;
       text-align: center;
       background: linear-gradient(to right, #facc15, #ffffff, #60a5fa);
