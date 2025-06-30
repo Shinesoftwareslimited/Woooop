@@ -452,6 +452,7 @@ nav a:hover {
 
 .subsidiary-card {
   background: #2e323d;
+  width: 100%;
   padding: 1.5rem;
   text-align: center;
   border-radius: 12px;
