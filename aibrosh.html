@@ -13,6 +13,75 @@
       box-sizing: border-box;
       font-family: 'Outfit', sans-serif;
     }
+    h1 {
+      font-size: 3rem;
+      text-align: center;
+      background: linear-gradient(to right, #facc15, #ffffff, #60a5fa);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-family: 'Orbitron', sans-serif;
+    }
+    .section {
+      max-width: 1200px;
+      margin: auto;
+      padding: 2rem 1rem;
+    }
+    .carder {
+      background: #12121c;
+      border: 1px solid #2e2e3e;
+      padding: 1.5rem;
+      border-radius: 1.25rem;
+      box-shadow: 0 4px 30px rgba(0,0,0,0.3);
+      margin-bottom: 2rem;
+    }
+    .carder h2 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    .badge {
+      display: inline-block;
+      background: #1e40af;
+      color: #fff;
+      padding: 0.25rem 0.75rem;
+      border-radius: 9999px;
+      font-size: 0.875rem;
+      margin-bottom: 0.5rem;
+    }
+    .grid {
+      display: grid;
+      gap: 1.5rem;
+    }
+    .grid-cols-2 {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .grid-cols-3 {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    .center {
+      text-align: center;
+    }
+    .button {
+      background: #facc15;
+      color: #000;
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      font-weight: bold;
+      border-radius: 0.75rem;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      border: none;
+      cursor: pointer;
+    }
+    .button:hover {
+      background: #ffe066;
+    }
+    @media(max-width: 768px) {
+      .grid-cols-2, .grid-cols-3 {
+        grid-template-columns: 1fr;
+      }
+        }
     body {
       background: #0b0c10;
       color: #ffffff;
@@ -176,7 +245,60 @@
         <button type="button" onclick="closeForm()" style="margin-top: 10px; background-color: #c5c6c7; color: #0b0c10;">Cancel</button>
       </form>
     </div>
-  </div>  <script>
+  </div> 
+  <div class="section">
+    <h1>VISION-V1.2-A</h1>
+    <p class="center">A Single-Tier, High-Precision Object Detection Framework</p><div class="grid grid-cols-2">
+  <div class="carder">
+    <h2 style="color:#facc15">Architecture Overview</h2>
+    <p>VISION12n is a high-performance, single-tier object detection model developed by Vigor Infotech. It utilizes a custom convolutional backbone and a modular detection head optimized for real-time multi-class object detection across diverse environments.</p>
+    <ul>
+      <li>Backbone built with Conv, C3, and A2C2f modules</li>
+      <li>5-stage spatial reduction pipeline (P1 to P5)</li>
+      <li>Fusion of high, mid, and low-level features</li>
+      <li>Custom Segment head for final detection</li>
+    </ul>
+  </div>
+
+  <div class="carder">
+    <h2 style="color:#60a5fa">Backbone and Feature Flow</h2>
+    <ul>
+      <li>P1: Conv layer (64 filters)</li>
+      <li>P2: Conv layer (128 filters)</li>
+      <li>P3: C3k2 ×2 (256 filters)</li>
+      <li>P4: A2C2f ×4 (512 filters)</li>
+      <li>P5: A2C2f ×4 (1024 filters)</li>
+      <li>Feature pyramid fusion via upsampling and Concat</li>
+    </ul>
+  </div>
+</div>
+
+<div class="carder">
+  <h2 style="color:#f472b6">Detection Head</h2>
+  <ul>
+    <li>Upsampling with nearest neighbor strategy</li>
+    <li>Skip connections from backbone layers P3, P4, P5</li>
+    <li>Multi-scale detection using Segment module</li>
+    <li>Outputs bounding boxes + class predictions</li>
+  </ul>
+</div>
+
+<div class="carder">
+  <h2 style="background: linear-gradient(to right, #facc15, #60a5fa); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Model Specifications</h2>
+  <div class="grid grid-cols-3">
+    <div><strong>Total Parameters:</strong> ~30M</div>
+    <div><strong>FLOPs:</strong> ~145.1 GFLOPs</div>
+    <div><strong>Depth:</strong> 510 layers</div>
+    <div><strong>Object Classes:</strong> 10</div>
+    <div><strong>Input Size:</strong> 512×512 (recommended)</div>
+    <div><strong>Modules:</strong> Conv, C3k2, A2C2f, Segment</div>
+    <div><strong>Activation:</strong> SiLU</div>
+    <div><strong>Upsampling:</strong> Nearest neighbor (2x)</div>
+    <div><strong>Framework:</strong> PyTorch</div>
+  </div>
+</div>
+    
+  <script>
     AOS.init();
     function openForm(productName) {
       document.getElementById('popupForm').style.display = 'flex';
