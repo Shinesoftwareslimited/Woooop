@@ -3,7 +3,7 @@
 :root {
   --primary: #00f0ff;
   --secondary: #0f051d;
-  --card-bg: rgba(255, 255, 255, 0.08);
+
   --border-glow: rgba(0, 240, 255, 0.6);
   --shadow-glow: rgba(0, 240, 255, 0.25);
   --blur-bg: rgba(255, 255, 255, 0.05);
@@ -34,8 +34,8 @@
   backdrop-filter: blur(10px);
   border-radius: 20px;
   padding: 2rem;
-  width: 280px;
-  height: 340px;
+  width: 300px;
+  height: 600px;
   text-align: center;
   color: #fff;
   text-decoration: none;
