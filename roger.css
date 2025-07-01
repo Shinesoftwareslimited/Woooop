@@ -23,16 +23,35 @@
 /* Swiper Container */
 .swiper {
   padding: 2rem 0;
+  height: 640px;
 }
 
-/* Each card */
+/* Each card
+.swiper {
+  padding: 2rem 0;
+  height: 640px; /* ⬅️ increase this based on card height /
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  height: 100%; /* ⬅️ stretch to full swiper height */
+  width: 320px; /* optional, control horizontal size */
+}
+*/
 .swiper-slide {
   display: flex;
   justify-content: center;
   align-items: stretch;
   padding: 1rem;
-  max-height: 520px;
+  max-height: 100%;
   width: 300px;
+}
+@media (max-width: 768px) {
+  .swiper-slide {
+    width: 90%;
+  }
 }
 
 /* Card Design */
