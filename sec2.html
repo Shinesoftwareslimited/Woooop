@@ -1,0 +1,151 @@
+<!-- Swiper & Fonts -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --primary: #00f0ff;
+  --secondary: #0f051d;
+  --card-bg: rgba(255, 255, 255, 0.08);
+  --border-glow: rgba(0, 240, 255, 0.6);
+  --shadow-glow: rgba(0, 240, 255, 0.25);
+  --blur-bg: rgba(255, 255, 255, 0.05);
+} t
+
+body {
+  background: linear-gradient(145deg, #0e0e2c, #151535);
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 2rem 1rem;
+  color: white;
+  overflow-x: hidden;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #a9f7ff;
+  text-shadow: 0 0 10px #00f0ff88;
+}
+
+.swiper {
+  padding: 2rem 0;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.secC-card {
+  background-size: cover;
+  background-position: center;
+  border: 1px solid var(--border-glow);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 2rem;
+  width: 280px;
+  height: 340px;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.4s ease-in-out;
+  position: relative;
+  box-shadow: 0 0 30px var(--shadow-glow);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.secC-card:hover {
+  transform: scale(1.03);
+  border-color: #00ffe1;
+  box-shadow: 0 0 50px var(--border-glow);
+}
+
+.secC-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 0;
+}
+
+.secC-card h2, .secC-card p {
+  position: relative;
+  z-index: 1;
+}
+
+.secC-card h2 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.secC-card p {
+  font-size: 1rem;
+  padding: 3px;
+  color: #a9f7ff;
+  text-align: left;
+  text-shadow: 0 0 5px #00f0ff;
+}
+</style>
+
+<h1 class="section-title">Our AI Products & Services</h1>
+
+<div class="swiper">
+  <div class="swiper-wrapper">
+
+    <div class="swiper-slide secC-card" style="background-image: url('https://cdn.pixabay.com/photo/2023/03/07/ai-chip-technology.jpg');">
+      <h2>Artificial Intelligence</h2>
+      <p>Best computer vision and NLP AI solutions across industries.</p>
+      <p>See AI solutions →</p>
+    </div>
+
+    <div class="swiper-slide secC-card" style="background-image: url('https://cdn.pixabay.com/photo/2016/11/29/09/08/website-1869561_1280.jpg');">
+      <h2>Website Design</h2>
+      <p>Custom, budget-friendly, template-free websites tailored to you.</p>
+      <p>Explore Web dev tiers →</p>
+    </div>
+
+    <div class="swiper-slide secC-card" style="background-image: url('vigintelli.jpg');">
+      <h2>App Designing</h2>
+      <p>Get Android/Desktop apps customized for your business goals.</p>
+      <p>See full brochure →</p>
+    </div>
+
+    <div class="swiper-slide secC-card" style="background-image: url('Digm.jpg');">
+      <h2>IoT and AIoT</h2>
+      <p>Smarter operations with connected devices & intelligent automation.</p>
+      <p>See full brochure →</p>
+    </div>
+    
+    <div class="swiper-slide secC-card" style="background-image: url('Digm.jpg');">
+      <h2>IoT and AIoT</h2>
+      <p>Smarter operations with connected devices & intelligent automation.</p>
+      <p>See full brochure →</p>
+    </div>
+
+  </div>
+</div>
+
+<script>
+  const swiper = new Swiper('.swiper', {
+    loop: false,
+    slidesPerView: 1.2,
+    spaceBetween: 20,
+    grabCursor: true,
+    breakpoints: {
+      640: {
+        slidesPerView: 2.2,
+      },
+      1024: {
+        slidesPerView: 3,
+      }
+    }
+  });
+  </script>
