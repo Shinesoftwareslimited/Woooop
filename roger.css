@@ -9,13 +9,7 @@
 }
 
 /* General page style */
-body {
-  margin: 0;
-  font-family: 'Inter', sans-serif;
-  background: linear-gradient(145deg, #0e0e2c, #151535);
-  color: white;
-  padding: 1rem;
-}
+
 
 /* Section title */
 .section-title {
