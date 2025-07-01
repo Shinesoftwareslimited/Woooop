@@ -1,6 +1,85 @@
 /* Vigor Industries Ultra Modern Metallic Theme CSS */
 
+:root {
+  --primary: #00f0ff;
+  --secondary: #0f051d;
+  --card-bg: rgba(255, 255, 255, 0.08);
+  --border-glow: rgba(0, 240, 255, 0.6);
+  --shadow-glow: rgba(0, 240, 255, 0.25);
+  --blur-bg: rgba(255, 255, 255, 0.05);
+}
 /* Base Reset */
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #a9f7ff;
+  text-shadow: 0 0 10px #00f0ff88;
+}
+
+.swiper {
+  padding: 2rem 0;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.secC-card {
+  background-size: cover;
+  background-position: center;
+  border: 1px solid var(--border-glow);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 2rem;
+  width: 280px;
+  height: 340px;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.4s ease-in-out;
+  position: relative;
+  box-shadow: 0 0 30px var(--shadow-glow);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.secC-card:hover {
+  transform: scale(1.03);
+  border-color: #00ffe1;
+  box-shadow: 0 0 50px var(--border-glow);
+}
+
+.secC-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 0;
+}
+
+.secC-card h2, .secC-card p {
+  position: relative;
+  z-index: 1;
+}
+
+.secC-card h2 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.secC-card p {
+  font-size: 1rem;
+  padding: 3px;
+  color: #a9f7ff;
+  text-align: left;
+  text-shadow: 0 0 5px #00f0ff;
+  }
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap');
 * {
   margin: 0;
