@@ -68,8 +68,9 @@
   box-shadow: 0 0 30px var(--shadow-glow);
   text-decoration: none;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
+flex-direction: column;
+justify-content: flex-end;
+position: relative;
   transition: transform 0.3s ease;
   overflow: hidden;
   backdrop-filter: blur(10px);
