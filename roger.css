@@ -10,7 +10,11 @@
 
 /* General page style */
 
-
+.card-content {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+}
 /* Section title */
 .section-title {
   text-align: center;
