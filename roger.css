@@ -20,6 +20,60 @@
         0 0 80px #0ff;
       animation: pulse 2s infinite ease-in-out;
     }
+    .container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+  color: #00e1ff;
+}
+
+.tagline {
+  text-align: center;
+  font-style: italic;
+  font-size: 1.2rem;
+  margin-bottom: 50px;
+  color: #aaa;
+}
+
+.card {
+  background: #1b1d21;
+  padding: 25px;
+  border-left: 5px solid #00e1ff;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 225, 255, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h2 {
+  margin-top: 0;
+  font-size: 1.6rem;
+  color: #ffffff;
+}
+
+.card p {
+  margin: 10px 0 0;
+  color: #cccccc;
+}
+
+.cta {
+  text-align: center;
+  margin-top: 60px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #00e1ff;
+}
+
 .h1 {
       font-size: 3rem;
       text-align: center;
