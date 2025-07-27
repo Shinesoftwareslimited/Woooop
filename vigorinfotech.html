@@ -400,28 +400,21 @@ Full transparency on pricing, IP ownership, timelines, and scope. You stay in co
      <center> <h1>See our product in <span class='highlight'>Action</span></h1></center><br>
   <div style="
     .video-section {
+  padding: 20px 10px; /* reduce vertical padding */
+  background: linear-gradient(135deg, #e0c3fc, #8ec5fc);
   display: flex;
   justify-content: center;
-  align-items: center;
-  padding: 20px;
 }
 
 .video-container {
   position: relative;
   width: 100%;
-  max-width: 900px; /* keep it elegant on big screens */
-  aspect-ratio: 16 / 9; /* modern CSS trick */
+  max-width: 800px;
+  aspect-ratio: 16 / 9;
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 0 10px 30px rgba(0,0,0,0.4);
-}
-
-.video-container iframe {
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  border: none;
-  }
+    }
   position:relative;
   overflow:hidden;
   width:100%;
