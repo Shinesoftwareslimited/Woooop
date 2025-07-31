@@ -77,7 +77,7 @@ h2 {
 .h1 {
       font-size: 3rem;
       text-align: center;
-      background: linear-gradient(to right, #facc15, #ffffff, #60a5fa);
+      background: #121212;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       font-family: 'Orbitron', sans-serif;
