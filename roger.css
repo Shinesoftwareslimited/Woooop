@@ -295,7 +295,7 @@ iframe {
   cursor: pointer;
 }
 body {
-  background: black;
+  background: #121212;
   color: #dfe6ed;
   overflow-x: hidden;
   transition: all 0.4s ease-in-out;
@@ -337,7 +337,7 @@ header img{
   position: sticky;
 }
 section#sector-services {
-    background: linear-gradient(to right, #1c1f26, #2e323d);
+    background: #121212;
  /* Matches site */
     padding: 60px 20px;
     text-align: center;
@@ -615,7 +615,7 @@ footer {
   position: fixed;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to right, #2e323d, #3d4453);
+  background: #121212;
   z-index: 1000;
   display: flex;
   align-items: center;
