@@ -499,7 +499,7 @@ nav a:hover {
       position: absolute; top: 0; left: 0;
       width: 100%; height: 100%; z-index: -1;
     }
-
+.carousel-container{background: #121212;}
 .carousel-container p {margin-top: 10px; font-size: 1.2rem; opacity: 0.85; align: center; text-align: center; padding: 4px}
   
 .subsidiary-grid {
