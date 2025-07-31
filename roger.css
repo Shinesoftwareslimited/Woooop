@@ -295,7 +295,7 @@ iframe {
   cursor: pointer;
 }
 body {
-  background: linear-gradient(to right, #1c1f26, #2e323d);
+  background: black;
   color: #dfe6ed;
   overflow-x: hidden;
   transition: all 0.4s ease-in-out;
