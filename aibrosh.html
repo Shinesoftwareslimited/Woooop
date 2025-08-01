@@ -279,7 +279,120 @@
 .call-button:hover {
   background-color: #218838;
 }
-
+.navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      backdrop-filter: blur(12px);
+      background: rgba(255,255,255,0.08);
+      box-shadow: 0 0 20px rgba(0, 255, 255, 0.1);
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+    }
+    .navbar .logo {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 1.4rem;
+      font-weight: bold;
+      color: white;
+      text-shadow: 0 0 10px #00f7ff;
+    }
+    .hamburger {
+      width: 30px;
+      height: 22px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      cursor: pointer;
+      z-index: 1100;
+    }
+    .hamburger span {
+      height: 3px;
+      background: #00f7ff;
+      border-radius: 2px;
+      transition: all 0.3s ease;
+    }
+    .overlay-nav {
+      position: fixed;
+      top: 0;
+      border-radius: 7px;
+      padding: 1rem;
+      right: 0;
+      width: 75%;
+      height: 100vh;
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(10px);
+      display: flex;
+      flex-direction: column;
+      align-items: left;
+      justify-content: center;
+      transform: translateX(100%);
+      transition: transform 0.4s ease-in-out;
+      z-index: 1050;
+    }
+    .overlay-nav.open {
+      transform: translateX(0);
+    }
+    .overlay-nav .close-btn {
+      position: absolute;
+      top: 1rem;
+      right: 1.5rem;
+      font-size: 2rem;
+      color: #00f7ff;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+    }
+    .overlay-nav a {
+      color: white;
+      align: left;
+      padding: 1.2rem;
+      text-align: left;
+      font-size: 1.2rem;
+      margin: 1rem 0;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    .overlay-nav a:hover {
+      color: #ffffff;
+    }
+    .header-panel {
+      margin-top: 70px;
+      background: rgba(255, 255, 255, 0.08);
+      box-shadow: 0 0 40px rgba(0, 255, 255, 0.15);
+      backdrop-filter: blur(12px);
+      border-radius: 5px;
+      padding: 4rem 2rem 3rem;
+      text-align: center;
+      border-radius: 0 0 40px 40px;
+      position: relative;
+      overflow: hidden;
+    }
+    .header-panel::before, .header-panel::after {
+      content: '';
+      position: absolute;
+      width: 400px;
+      height: 400px;
+      background: radial-gradient(circle, #00f7ff 0%, transparent 70%);
+      filter: blur(100px);
+      animation: sparkle 6s infinite alternate;
+      opacity: 0.3;
+    }
+    .header-panel::before {
+      top: -100px;
+      left: -150px;
+    }
+    .header-panel::after {
+      bottom: -100px;
+      right: -150px;
+    }
+    @keyframes sparkle {
+      0% { transform: translate(0, 0); opacity: 0.3; }
+      100% { transform: translate(20px, 20px); opacity: 0.5; }
+  }
 .social-icons {
   display: flex;
   gap: 10px;
@@ -355,8 +468,29 @@ footer {
   </style>
 </head>
 <body>
-  <header data-aos="fade-down"><h1>Vigor Infotech Limited</h1></header>
-  <div class='hero'>
+  <div class="navbar">
+    <div class="logo">Vigor Infotech Limited</div>
+    <div class="hamburger" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+  <div class="overlay-nav" id="overlayNav">
+    <button class="close-btn" onclick="toggleMenu()">&times;</button>
+    <a href='/vigorinfotechlimited'>Home</a>
+    <a href="#cont">Tiers</a>
+    <a href="#lop">Why Choose Us</a>
+    <a href="#consult">Get Consultation (Free)</a>
+    <a href="#about">Contact</a>
+  </div>
+ <script>
+    function toggleMenu() {
+      const overlay = document.getElementById('overlayNav');
+      overlay.classList.toggle('open');
+    }
+ </script>
+    <div class='hero'>
     
     <p>Transforming businesses with cutting-edge AI solutions for tomorrow's world</p>
   </div> <br> <section class="feature" data-aos="zoom-in">
