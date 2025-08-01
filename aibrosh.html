@@ -195,7 +195,27 @@
   color: #333;
   font-family: Arial, sans-serif;
 }
+.hero {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: url('https://images.unsplash.com/photo-1581090700227-1e8e8c3381b0?auto=format&fit=crop&w=1650&q=80') no-repeat center center/cover;
+  color: #fff;
+  padding: 20px;
+}
 
+.hero h1 {
+  font-size: 2em;
+  text-shadow: 0 0 10px #000;
+  animation: fadeInDown 2s;
+        }
+    .hero h2{
+  font-size: 1.5em;
+  text-shadow: 0 0 10px #000;
+  animation: fadeInDown 2s;
+      }
 .about-block {
   padding: 2rem;
   margin: 2rem auto;
@@ -335,11 +355,11 @@ footer {
   </style>
 </head>
 <body>
-  <header data-aos="fade-down">
+  <div class='hero' data-aos="fade-down">
     <h1>Vigor Infotech Limited</h1>
     <h2>AI Services</h2>
     <p>Transforming businesses with cutting-edge AI solutions for tomorrow's world</p>
-  </header> <br> <section class="feature" data-aos="zoom-in">
+  </div> <br> <section class="feature" data-aos="zoom-in">
     <h2>VigorVision AI</h2>
     <p>An advanced visual AI engine designed for industry-grade object detection, video intelligence, and predictive maintenance.</p>
     <iframe src="https://www.youtube.com/embed/YdKCo6k5O3I?si=ejPL0FE0llTrejW8"></iframe>
