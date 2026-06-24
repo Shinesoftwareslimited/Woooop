@@ -1,87 +1,339 @@
+
 <!DOCTYPE html>
 <html lang="en" class="no-js">
 <head>
-<!-- Primary Meta Tags -->
-<title>Vigor Industries Limited | Global Conglomerate of Innovation</title>
-<meta name="title" content="Vigor Industries Limited | Global Conglomerate of Innovation">
-<meta name="description" content="Vigor Industries Limited is a global leader in mining, infrastructure, IT, energy, healthcare, retail, and advanced research. Access all subsidiaries through this unified portal.">
+  <!-- Primary Meta Tags -->
+<title>Vigor Technologies Limited</title>
+<meta name="title" content="Vigor Technologies Limited">
+<meta name="description" content="Vigor Technologies Limited is a global IT firm which provides services in various IT related field and is a member of Vigor Industries Limited.">
 <link rel="icon" href="favilog.PNG" type="image/png">
+  
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://www.vigorindustries.com/">
-<meta property="og:title" content="Vigor Industries Limited | Global Conglomerate of Innovation">
-<meta property="og:description" content="Explore the world of Vigor: your gateway to mining, infrastructure, AI, healthcare, energy, and future tech.">
-<meta property="og:image" content="https://newseepie.live/favilog.PNG">
+<meta property="og:url" content="https://www.newseepie.com/">
+<meta property="og:title" content="Vigor Technologies Limited ">
+<meta property="og:description" content="Vigor Technologies Limited is a global IT firm which provides services in various IT related field and is a member of Vigor Industries Limited.">
+<meta property="og:image" content="favilog.PNG" type='image/png'>
 
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:url" content="https://www.vigorindustries.com/">
 <meta name="twitter:title" content="Vigor Industries Limited | Global Conglomerate of Innovation">
 <meta name="twitter:description" content="A futuristic industrial conglomerate. Dive into Vigor’s ecosystem of innovation.">
-<meta name="twitter:image" content="https://www.vigorindustries.com/assets/twitter-banner.jpg">
+<meta name="twitter:image" content="favilog.PNG">
 
 <!-- SEO Meta -->
-
 <meta name="robots" content="index, follow">
 <meta name="author" content="Vigor Industries Limited">
-<meta name="keywords" content="Vigor Industries, Mining, Infrastructure, AI, Technology, Space, Healthcare, Power, Retail, Global Conglomerate, Vigor India, Vigor Space Research, Vigor Infotech, Vigor Steels, Vigor Medical, Vigor Motors">
+<meta name="keywords" content="Vigor Industries, Mining, Infrastructure, AI, Technology, Space, Healthcare, Power, Retail, Global Conglomerate, Vigor India, Vigor Space Research, Vigor Technologies, Vigor Steels, Vigor Medical, Vigor Motors">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta charset="UTF-8">
-  <link rel="icon" href="favilog.PNG" type="image/png">
-  <link rel="stylesheet" href="style.css" />
+<!--  <script src="https://cdn.tailwindcss.com"></script>-->
+  <link rel="stylesheet" href="roger.css" />
+  <link rel="stylesheet" href="caru.css" />
   <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  
 </head>
 <body class="loading">
+  <!-- Add inside <body> -->
+
+<!-- Include Particles.js library -->
+
   <!-- Loader -->
-  <div id="loader" class="loader"></div>
-
+  
   <!-- Header -->
-  <header><img src="favilog.PNG" width= 105><br>
-    <br>
-    <div class="logo">VIGOR INDUSTRIES LIMITED</div>
+  <header class='glass'><a href="https://www.newseepie.live/"><img src="favilog.PNG" width= 90></a><br>
+    <br><div class="logo">VIGOR Technologies LIMITED</div>
     <div id="userPanel"></div>
-    <button id="menuToggle">☰</button>
-    <nav id="navDrawer" class="nav-drawer">
-      <a href="https://www.newseepie.live/">Home</a>
-      <a href="#procurement">Procurement</a>
-      <a href="#careers">Careers</a>
-      <a href="#updates">Updates</a>
-      <a href="#achievements">Achievements</a>
-      <a href="#about">About</a>
-    </nav>
+    <button class="nav-btn" id="nav-open">☰</button>
+    
   </header>
-
-  <!-- Hero Section -->
-  <section class="hero animate-on-scroll">
-    <h1>Empowering the Future</h1>
-    <p>Taking Humanity To Brighter Future</p>
+<nav class="side-nav glass" id="side-nav">
+    <button class="close-btn" id="nav-close">×</button>
+    <ul>
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#sectors">Sectors we serve</a></li>
+      <li><a href="#swiper">Services</a></li>
+      <li><a href='#updates'>Updates</a></li>
+      <li><a href="#case">Case Study</a></li>
+      <li><a href="/wwd">What we do?</a></li>
+      <li><a href='/consult'>Book Consultation (free)</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+<section class="hero" id="hero">
+    <div id="hero-lottie"></div>
+    <h1 class="fade-in">Disrupting <span class="highlight">Industries</span> with <span class='highlight'>AI efficiency</span></h1>
+    <p class="fade-in">Where vision meets the intelligence</p>
+    <button class="btn fade-in">Explore Our Work</button>
+    <div id="particles-js">
   </section>
+<!-- HTML -->
+<div class="carousel-container">
+  <center><h2>Transforming <span class="highlight">Industries</span></h2></center>
+  <p class='fade-in'>Sectors we serve</p>
+  <div class="carousel-controls" id='sectors'>
+    <button id="prev">&#8592;</button>
+    <span id="page-indicator">01 / 08</span>
+    <button id="next">&#8594;</button>
+  </div>
+
+  <div class="carousel" id="carousel">
+    <!-- Card Example -->
+    <div class="card">
+      <img src="medai.png" alt="Healthcare">
+      <div class="overlay">
+        <h3>Healthcare & MedTech</h3>
+        <p>AI diagnostics, smart records, hospital automation, and wellness platforms for precision care delivery.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="Fin.png" alt="Finance">
+      <div class="overlay">
+        <h3>Finance & Fintech</h3>
+        <p>Real-time fraud detection, AI underwriters, portfolio automation, and predictive financial analytics.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="Industry.png" alt="Manufacturing">
+      <div class="overlay">
+        <h3>Smart Manufacturing</h3>
+        <p>Factory floor automation, visual inspection AI, edge computing, and real-time production analytics.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="Ecom.png" alt="Retail">
+      <div class="overlay">
+        <h3>Retail & Commerce</h3>
+        <p>Recommendation engines, demand forecasting, autonomous store tech, and AI-powered CRM tools.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="Ailogi.png" alt="Logistics">
+      <div class="overlay">
+        <h3>Logistics & Transport</h3>
+        <p>Fleet tracking, last-mile AI, logistics route optimization, and warehouse robotics.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="file_00000000e22461f781e9a9b395fcaa5e.png" alt="Education">
+      <div class="overlay">
+        <h3>Education & Learning</h3>
+        <p>AI tutors, content generation, smart testing platforms, and student success predictors.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="Egov.png" alt="Governance">
+      <div class="overlay">
+        <h3>Smart Governance</h3>
+        <p>Digital public service bots, grievance redressal automation, civic engagement platforms, and traffic AI.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="AIagri.jpg" alt="Agritech">
+      <div class="overlay">
+        <h3>Agriculture & AgriTech</h3>
+        <p>Satellite mapping, soil AI, smart irrigation, drone-based farming, and crop yield forecasting.</p>
+      </div>
+    </div>
+  </div>
+</div>
 
   <!-- Subsidiaries -->
-  <section id="subsidiaries" class="animate-on-scroll">
-    <h2>Our Companies</h2>
-    <div class="subsidiary-grid">
-      <!--<a href="https://www.vigormines.vigorindustrieslimited.newseepie.live" class="subsidiary-card">Vigor Mines</a>-->
-      <a href="/vigorinfotechlimited" class="subsidiary-card">Vigor Infotech Limited</a>
-      <!--<a href="https://www.vigorconsultancyserv.vigorindustrieslimited.newseepie.live" class="subsidiary-card">Vigor Consultancy Services Limited</a>-->
-      <!--<a href="#" class="subsidiary-card">Vigor Steels</a>
-      <a href="#" class="subsidiary-card">Vigor Medicares</a>
-      <a href="#" class="subsidiary-card">Vigor Motors</a>
-      <a href="#" class="subsidiary-card">Vigor Powers</a>
-      <a href="#" class="subsidiary-card">Vigor Ports</a>
-      <a href="#" class="subsidiary-card">Vigor Research Labs</a> -->
-    </div>
-  </section>
-  
-  <br>
+<!-- Swiper & Fonts -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 
+<style>
+:root {
+  --primary: #00f0ff;
+  --secondary: #0f051d;
+  --card-bg: rgba(255, 255, 255, 0.08);
+  --border-glow: rgba(0, 240, 255, 0.6);
+  --shadow-glow: rgba(0, 240, 255, 0.25);
+  --blur-bg: rgba(255, 255, 255, 0.05);
+} t
+
+body {
+  background: #121212;
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 2rem 1rem;
+  color: white;
+  overflow-x: hidden;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #a9f7ff;
+  text-shadow: 0 0 10px #00f0ff88;
+}
+
+.swiper {
+  padding: 2rem 0;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.secC-card {
+  background-size: cover;
+  background-position: center;
+  border: 1px solid var(--border-glow);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 2rem;
+  width: 280px;
+  height: 340px;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.4s ease-in-out;
+  position: relative;
+  box-shadow: 0 0 30px var(--shadow-glow);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.secC-card:hover {
+  transform: scale(1.03);
+  border-color: #00ffe1;
+  box-shadow: 0 0 50px var(--border-glow);
+}
+
+.secC-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 0;
+}
+
+.secC-card h2, .secC-card p {
+  position: relative;
+  z-index: 1;
+}
+
+.secC-card h2 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.secC-card p {
+  font-size: 1rem;
+  padding: 3px;
+  color: #a9f7ff;
+  text-align: left;
+  text-shadow: 0 0 5px #00f0ff;
+}
+</style>
+
+<h1 class="section-title">Our AI Products & Services</h1>
+
+<div class="swiper">
+  <div class="swiper-wrapper">
+
+    <div class="swiper-slide secC-card" style="background-image: url('aiimg.png');">
+      <h2>Artificial Intelligence</h2>
+      <p>Best computer vision and NLP AI solutions across industries.</p>
+      <a href='/aibrosh'><p>See AI solutions →</p></a>
+    </div>
+
+    <div class="swiper-slide secC-card" style="background-image: url('webdesi2.png');">
+      <h2>Website Design</h2>
+      <p>Custom, budget-friendly, template-free websites tailored to you.</p>
+     <a href='/webbrosh'> <p>Explore Web dev tiers →</p></a>
+    </div>
+
+    <div class="swiper-slide secC-card" style="background-image: url('app.png');">
+      <h2>App Designing</h2>
+      <p>Get Android/Desktop apps customized for your business goals.</p>
+    <a href='/appdesign'>  <p>See full brochure →</p></a>
+    </div>
+
+   <!-- <div class="swiper-slide secC-card" style="background-image: url('Digm.jpg');">
+      <h2>IoT and AIoT</h2>
+      <p>Smarter operations with connected devices & intelligent automation.</p>
+      <p>See full brochure →</p>
+    </div>
+    
+    <div class="swiper-slide secC-card" style="background-image: url('Digm.jpg');">
+      <h2>IoT and AIoT</h2>
+      <p>Smarter operations with connected devices & intelligent automation.</p>
+      <p>See full brochure →</p>
+    </div>-->
+
+  </div>
+</div>
+
+<script>
+  const swiper = new Swiper('.swiper', {
+    loop: false,
+    slidesPerView: 1.2,
+    spaceBetween: 20,
+    grabCursor: true,
+    breakpoints: {
+      640: {
+        slidesPerView: 2.2,
+      },
+      1024: {
+        slidesPerView: 3,
+      }
+    }
+  });
+</script>
+  
+  <br><br>
+  
   <section id="careers" class="subsidiary-card animate-on-scroll">
+     
       <h2>Careers & Opportunities</h2>
       <p>Join our conglomorate. Build your future with Vigor Industries. We are open to hire on the basis of your qualification and experience. Join our journey to success. Contact our hiring team :- <br><br><button> <a href= "https://wa.me/919039980219">Hiring Team</a></button>
       </p>
     </section>
   <br>
 
+     <div id='updates'>
+       <br>
+      <h2>Updates</h2>
+      <p> <br><div class=""><br><br><br>
+              <iframe class='big'
+                src="/updatesvigorinfo" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade"><a href='/updatesvigorinfo'>See Updates</a>
+              </iframe>
+            </div>
+      </p>
+    
+</div>
+  <br><h2>Case Study</h2>
+  <section>
+  <div class='sector-grid' id='case'>
+    
+    <div class='sector-card'>
+  <!--  --><p><strong>Yusuf Ayurved Limited</strong> <br>increased their sales by 40% and online presence by 90% by getting our responsive website services at affordable costs. We provide services for you, which meets your requirement. We don't force our templates, we give you your right to choose and modify. <br><br>Our Customer: <span class='highlight'>"A website helped us alot to build our online presence and credibility and Vigor Technologies Limited has done the best work. Their service is appreciable."</span> <br>-- Faizan Khan<br> CEO Yusuf Ayurved<br><br>Our developer: <span class='highlight'>"We remain sleepless unless our client's project is completed and is error free"</span><br>- Anonymous Developer at Vigor<br><br><a href='/webbrosh' class='implink'>Get Website Services</a></p></div></div></section><br>
   <!-- Settings Panel 
   <section id="settings" class="settings-section animate-on-scroll">
     <h2>Preferences</h2>
@@ -103,64 +355,103 @@
       <button type="submit">Save Settings</button>
     </form>
   </section> -->
- 
+  <div class="floating-btn-container">
+    <button class="floating-btn glass">Why Choose Us?</button>
+    <div class="info-card glass">
+      <h4></h4>
+      <p>
+        <h2>1. End-to-End Tech Solutions Under One Roof</h2>
+Web, mobile, cloud, AI, cybersecurity, automation — no vendor juggling, just one trusted partner.
+
+
+        <br>
+<h2>2. Faster Delivery, Zero Drama</h2>
+On-time. On-budget. Always. Our teams deliver faster without sacrificing quality.
+        <br>
+
+<h2>3. 24x7 Premium Human Support</h2>
+Real people. Real-time. Real help — not just bots.
+        <br>
+
+<h2>4. Fortress-Grade Security</h2>
+Your data stays protected with enterprise-level cybersecurity and compliance protocols.
+
+        <br>
+<h2>5. Future-Proof Technology</h2>
+We build using AI, ML, IoT, Web3, and next-gen architecture — so you’re not outdated next year.
+
+        <br>
+        <h2>6. Cost-Efficient with High ROI</h2>
+We don’t just fit your budget — we grow your profits. Efficient tech that pays for itself.
+
+        <br>
+        <h2>7. Solutions That Scale with You</h2>
+Whether you're a startup or an enterprise, our tech grows with your business. One-time investment. Lifetime scalability.
+        <br>
+
+        <h2>8. No Hidden Costs, No Confusion</h2>
+Full transparency on pricing, IP ownership, timelines, and scope. You stay in control.
+
+        <br>
+</p>
+    </div>
+  </div>
+<center> <h1>See our product in <span class='highlight'>Action</span></h1></center><br>
+  
+       <div style="
+    
+.video-container {
+  position: relative;
+  width: 10%;
+  max-width: 40px;
+  aspect-ratio: 16/19;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    }
+  position:relative;
+  overflow:hidden;
+  width:100%;
+  max-width:900px;
+  margin:auto;
+  padding-top:56.25%; /* 16:9 */
+  border-radius:24px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.4);
+  background:linear-gradient(135deg,#e0c3fc,#8ec5fc);
+">
+
+  <div class="video-container">
+    <iframe
+      src="https://www.youtube.com/embed/YdKCo6k5O3I?autoplay=1&mute=1&loop=1&playlist=YdKCo6k5O3I&controls=0&modestbranding=1&showinfo=0&rel=0"
+      frameborder="0"
+      allow="autoplay; fullscreen; encrypted-media"
+      allowfullscreen>
+    </iframe>
+  </div>
+  
+
+  </div>
+  <br>
+<center>  <h1>Actions and <span class='highlight'>Information</span></h1></center>
+
+  <br>
+  <iframe class='big'
+                src="section.html" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+  </iframe><br><br>
  <section id="about" class="about-block animate-on-scroll">
   <div class="about-div">
-    <h2 class="section-title">About Vigor Industries Limited</h2>
+    <h2 class="section-title">About Vigor Technologies Limited</h2>
     <br>
-    <p class="lead">Vigor Industries Limited is a globally renowned Indian conglomerate committed to transforming the future through innovation, technology, and sustainability. Founded by visionary industrialist Abhishek Tiwari and co-led by Sanjeevani Mishra, the company has grown into a powerhouse across multiple sectors.</p>
-    <br>
-    <div id="vision" class="about-block">
-      <h3>Our Vision</h3>
-      <br>
-      <p>To lead the world into a new era of industrial innovation by building sustainable solutions across infrastructure, mining, space, defense, healthcare, energy, and technology sectors. We aim to become the world's most impactful conglomerate by 2060, focused on empowering the future of India and the globe.</p>
-    </div>
-    <br>
-    <div class="about-block">
-      <h3>Mission</h3>
-      <br>
-      <ul>
-      <!--  <li>Develop world-class infrastructure and smart cities, including Vigor City Bhilai and Vigor Sanjeevani Islands.</li>-->
-        <li>Lead the energy transition through nuclear, solar, hydrogen, and AI-powered power grids.</li>
-        <li>Build India’s strongest indigenous defense and space technologies.</li>
-        <li>Promote ethical AI, sustainability, and health innovations.</li>
-        <li>Invest in education, research, and social transformation at the grassroots level.</li>
-      </ul>
-    </div>
-    <br>
-    <div id="board" class="board">
-      <h3>Board Members</h3>
-      <br>
-      <ul>
-        <li><strong>Abhishek Tiwari</strong> – Chairman & Managing Director (Promoter)</li>
-        <li><strong>Sanjeevani Mishra</strong> – Vice Chairwoman & Executive Director (Promoter)</li><br>
-        <li><strong>Sujeet Tiwari</strong> – Chief Management and Financial Officer (Promoter)</li>
-        
-      </ul>
-    </div>
-    <br>
-    <br>
-    <div class="about-block">
-      <a href="directornote.html" class="subsidiary-card">Note From Director </a></div>
-    <br><br>
-    <div class="about-block">
-      <h3>Our Subsidiaries</h3>
-      <br>
-      <ul>
-        <li>Vigor Mines And Natural Resources (Mines, Oil & Gas, Steels)</li>
-        <li>Vigor Infrastructures Limited</li>
-        <li>Vigor Infotech Limited</li>
-        <li>Vigor Powers Limited</li>
-        <li>Vigor Retail Services Limited</li>
-        <li>Vigor Commodities Limited</li>
-        <li>Vigor Medicares Limited</li>
-        <li>Vigor Motors Limited</li>
-        <li>Vigor Finserv Limited</li>
-        <li>Vigor Petrochemicals Limited</li>
-        <li>Vigor Research Laboratories (Space, R&D, Economics, Philanthropy)</li>
-        <li>Vigor Logistics Limited (Ports, SEZs, Riverways)</li>
-      </ul>
-    </div>
+    <p class="lead">Vigor Technologies Limited is an Indian IT conglomerate committed to transforming the future through innovation in technology, and sustainability. Founded by visionary industrialist Abhishek Tiwari and co-led by Sanjeevani Mishra, the company has grown into a powerhouse of IT industry.</p>
+    
+  </div>
+<br><br>
+       <br>
+
+  
     <br>
     <div class="about-block">
       <h3>Corporate Headquarters</h3>
@@ -180,8 +471,7 @@
             </div>
       </address>
     </div><br>
-
-    <div class="about-block">
+      <div class="about-block" id='contact'>
     <center>  <h3>Contact Us</h3></center><br>
       <ul>
         <li><a href="mailto:vigorindustrieslimited@gmail.com" target="_blank">
@@ -204,7 +494,7 @@
     <i class="fas fa-phone-alt"></i> Call for support
 </a></li><br>
        <li> <div class="social-icons">
-      <a href="https://www.instagram.com/vigor_infotech_limited?igsh=MWIwZDEwMjhiNmlwcw==" target="_blank">
+      <a href="https://www.instagram.com/vigor_Technologies_limited?igsh=MWIwZDEwMjhiNmlwcw==" target="_blank">
         <img src="https://cdn-icons-png.flaticon.com/512/1384/1384063.png" alt="Instagram">
       </a>
      <!-- <a href="https://www.facebook.com" target="_blank">
@@ -213,7 +503,7 @@
       <a href="https://www.linkedin.com/company/vigor-industries-limited?trk=blended-typeahead" target="_blank">
         <img src="https://cdn-icons-png.flaticon.com/512/1384/1384014.png" alt="LinkedIn">
       </a>
-      <a href="https://www.youtube.com/@vigorinfotechlimited" target="_blank">
+      <a href="https://www.youtube.com/@vigorTechnologieslimited" target="_blank">
   <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube">
       </a>
          <a href="https://twitter.com/VigorIndustries" target="_blank">
@@ -221,25 +511,127 @@
          </a>
         </div></li>   </ul><br>
       <div class="container mx-auto">
-      <h3 class="text-3xl font-bold mb-4">Important Links</h3><br>
-      <p><a href="https://www.newseepie.live/" class="implink">Vigor Industries Limited </a></p><br><p><a href="https://www.newseepie.live/vigorinfotechlimited" class="implink">Vigor Infotech Limited</a></p><br>
+    <center>  <h3 class="text-3xl font-bold mb-4">Important Links</h3><br>
+      <p><a href="https://www.newseepie.live/" class="implink">Vigor Industries Limited </a></p><br><p><a href="https://www.newseepie.live/vigorTechnologieslimited" class="implink">Vigor Technologies Limited</a></p><br>
       <p><a href="https://www.newseepie.live/viginfoupdates" class="implink">Latest Updates</a></p><br>
       <p><a href="https://www.newseepie.live/ppolicy" class="implink">Privacy Policy</a></p>
-     
+     </center>
     </div>
     </div>
   </div>
 </section>
 
-
+</div>
 
   <!-- Footer -->
-  <footer>
+  <footer class='glass'>
     <p>&copy; 2025 Vigor Industries Limited. All rights reserved.</p>
-           </footer>
+  </footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.6/lottie.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+<script>
+lottie.loadAnimation({
+      container: document.getElementById('hero-overlay'),
+      renderer: 'svg',
+      loop: true,
+      autoplay: true,
+      path: 'https://assets5.lottiefiles.com/packages/lf20_jcikwtux.json'
+    });
+   particlesJS('particles-js', {
+      particles: {
+        number: { value: 60 },
+        size: { value: 3 },
+        move: { speed: 1 },
+        line_linked: { enable: true, color: '#00aaff' }
+      }
+    });
+</script>
+  <script src="nscript.js"></script>
+  <script src="car.js"></script>
+<script>
+  const carousel = document.getElementById('carousel');
+  const prevBtn = document.getElementById('prev');
+  const nextBtn = document.getElementById('next');
+  const pageIndicator = document.getElementById('page-indicator');
 
-  <script src="script.js"></script>
+  const cards = document.querySelectorAll('.card');
+  const cardWidth = cards[0].offsetWidth + 20;
+  let currentIndex = 0;
+  let autoSlideInterval;
+
+  function updateIndicator() {
+    const total = cards.length;
+    const current = Math.min(total, Math.floor(carousel.scrollLeft / cardWidth) + 1);
+    pageIndicator.textContent = `${String(current).padStart(2, '0')} / ${String(total).padStart(2, '0')}`;
+  }
+
+  function scrollToCard(index) {
+    const scrollX = index * cardWidth;
+    carousel.scrollTo({ left: scrollX, behavior: 'smooth' });
+    currentIndex = index;
+    updateIndicator();
+  }
+
+  function slideNext() {
+    currentIndex = (currentIndex + 1) % cards.length;
+    scrollToCard(currentIndex);
+  }
+
+  function startAutoSlide() {
+    stopAutoSlide(); // Clear any existing interval
+    autoSlideInterval = setInterval(slideNext, 5000); // Slide every 5 seconds
+  }
+
+  function stopAutoSlide() {
+    clearInterval(autoSlideInterval);
+  }
+
+  // Event listeners
+  prevBtn.addEventListener('click', () => {
+    if (currentIndex > 0) {
+      scrollToCard(currentIndex - 1);
+    } else {
+      scrollToCard(cards.length - 1); // Wrap around
+    }
+    startAutoSlide(); // Reset timer
+  });
+
+  nextBtn.addEventListener('click', () => {
+    slideNext();
+    startAutoSlide();
+  });
+
+  carousel.addEventListener('scroll', updateIndicator);
+  carousel.addEventListener('mouseenter', stopAutoSlide);
+  carousel.addEventListener('mouseleave', startAutoSlide);
+
+  window.addEventListener('load', () => {
+    updateIndicator();
+    startAutoSlide(); // Kick things off
+  });
+
+  // tailwind.config.js
+
+</script>
+  
+<script>
+  const swiper = new Swiper('.swiper', {
+    loop: false,
+    grabCursor: true,
+    spaceBetween: 24,
+    slidesPerView: 1.1,
+    breakpoints: {
+      640: {
+        slidesPerView: 2,
+        spaceBetween: 24,
+      },
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 30,
+      }
+    }
+  });
+</script>
+  
 </body>
-</html>
-
-        
+              </html>
